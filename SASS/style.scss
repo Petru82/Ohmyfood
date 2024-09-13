@@ -1,0 +1,10 @@
+@import "Variables/variables";
+@import "Utils/mixins";
+@import "Base/general";
+@import "Layout/header";
+@import "Layout/footer";
+@import "Composents/buttons";
+
+.header {
+  @include titreh1;
+}

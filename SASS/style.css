@@ -1,0 +1,33 @@
+/****** General ***********/
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  font-size: 24px;
+  color: #333;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 10px;
+  text-align: center;
+}
+
+.footer {
+  background-color: #353535;
+}
+
+.button {
+  border-radius: 20px;
+  background-color: #9356dc;
+  padding: 20px;
+}
+
+.header {
+  font-family: "Shrikhand", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+}/*# sourceMappingURL=style.css.map */
