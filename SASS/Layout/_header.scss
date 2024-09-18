@@ -2,7 +2,15 @@ header {
   background-color: #fff;
   text-align: center;
   height: 113px;
-  margin-top: 30px;
+}
+
+nav {
+  height: 63px;
+  box-shadow: 0px 2px 4px 0px #00000026;
+}
+
+img.navbar_logo {
+  margin-top: 20px;
 }
 
 .search-container {
@@ -17,7 +25,7 @@ header {
   font-size: 16px;
   background-color: #eaeaea;
   border: none;
-  box-shadow: 0 2px 4px rgba(0, 4, 4, 0);
+  box-shadow: 0px 4px 4px 0px #00000040;
 }
 
 .search-container::before {
