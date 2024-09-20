@@ -6,6 +6,10 @@
 
 @mixin button1 {
   border-radius: 20px;
-  background-color: $primary-color;
-  padding: 20px;
+  background-image: linear-gradient(#ff79da, #9356dc);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+  border: none;
+  color: #ffffff;
+  width: 218px;
+  height: 50px;
 }
