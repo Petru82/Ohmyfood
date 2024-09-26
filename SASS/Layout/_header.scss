@@ -1,9 +1,7 @@
 header {
-  @media (max-width: $largeur-maximum) {
-    background-color: #fff;
-    text-align: center;
-    height: 113px;
-  }
+  background-color: #fff;
+  text-align: center;
+  height: 113px;
 }
 
 nav {
@@ -16,10 +14,8 @@ img.navbar_logo {
 }
 
 .search-container {
-  @media (max-width: $largeur-maximum) {
-    position: relative;
-    width: 100%;
-  }
+  position: relative;
+  width: 100%;
 }
 
 .search-input {

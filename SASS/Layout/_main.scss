@@ -6,16 +6,20 @@ section.title {
 }
 
 h1 {
-  font-family: $font-primary;
-  margin-top: 39px;
-  width: 275px;
-  height: 68px;
+  @media (max-width: $largeur-maximum) {
+    font-family: $font-primary;
+    margin-top: 39px;
+    width: 275px;
+    height: 68px;
+  }
 }
 
 .title p {
-  font-family: $font-secondary;
-  width: 315px;
-  margin-bottom: 73px;
+  @media (max-width: $largeur-maximum) {
+    font-family: $font-secondary;
+    width: 315px;
+    margin-bottom: 73px;
+  }
 }
 
 a.button {

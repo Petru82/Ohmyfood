@@ -9,12 +9,10 @@
   color: #333;
 }
 
-@media (max-width: 768px) {
-  header {
-    background-color: #fff;
-    text-align: center;
-    height: 113px;
-  }
+header {
+  background-color: #fff;
+  text-align: center;
+  height: 113px;
 }
 
 nav {
@@ -26,11 +24,9 @@ img.navbar_logo {
   margin-top: 20px;
 }
 
-@media (max-width: 768px) {
-  .search-container {
-    position: relative;
-    width: 100%;
-  }
+.search-container {
+  position: relative;
+  width: 100%;
 }
 
 .search-input {
@@ -87,17 +83,21 @@ section.title {
   text-align: center;
 }
 
-h1 {
-  font-family: "Shrikhand", serif;
-  margin-top: 39px;
-  width: 275px;
-  height: 68px;
+@media (max-width: 768px) {
+  h1 {
+    font-family: "Shrikhand", serif;
+    margin-top: 39px;
+    width: 275px;
+    height: 68px;
+  }
 }
 
-.title p {
-  font-family: "Roboto", sans-serif;
-  width: 315px;
-  margin-bottom: 73px;
+@media (max-width: 768px) {
+  .title p {
+    font-family: "Roboto", sans-serif;
+    width: 315px;
+    margin-bottom: 73px;
+  }
 }
 
 a.button {
