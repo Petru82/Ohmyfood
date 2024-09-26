@@ -3,11 +3,13 @@ section.title {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background-color: #f6f6f6;
+  padding-bottom: 57px;
 }
 
 h1 {
   @media (max-width: $largeur-maximum) {
-    font-family: $font-primary;
+    font-family: $font-secondary;
     margin-top: 39px;
     width: 275px;
     height: 68px;
@@ -18,7 +20,8 @@ h1 {
   @media (max-width: $largeur-maximum) {
     font-family: $font-secondary;
     width: 315px;
-    margin-bottom: 73px;
+    margin-top: 10px;
+    margin-bottom: 27px;
   }
 }
 
@@ -28,7 +31,6 @@ a.button {
 }
 
 section.container-filter {
-  margin-top: 182px;
   display: flex;
   flex-direction: column;
   align-items: center;

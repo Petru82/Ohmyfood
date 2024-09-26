@@ -9,10 +9,12 @@
   color: #333;
 }
 
-header {
-  background-color: #fff;
-  text-align: center;
-  height: 113px;
+@media (max-width: 768px) {
+  header {
+    background-color: #fff;
+    text-align: center;
+    height: 113px;
+  }
 }
 
 nav {
@@ -81,11 +83,13 @@ section.title {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background-color: #f6f6f6;
+  padding-bottom: 57px;
 }
 
 @media (max-width: 768px) {
   h1 {
-    font-family: "Shrikhand", serif;
+    font-family: "Roboto", sans-serif;
     margin-top: 39px;
     width: 275px;
     height: 68px;
@@ -96,7 +100,8 @@ section.title {
   .title p {
     font-family: "Roboto", sans-serif;
     width: 315px;
-    margin-bottom: 73px;
+    margin-top: 10px;
+    margin-bottom: 27px;
   }
 }
 
@@ -106,7 +111,6 @@ a.button {
 }
 
 section.container-filter {
-  margin-top: 182px;
   display: flex;
   flex-direction: column;
   align-items: center;
