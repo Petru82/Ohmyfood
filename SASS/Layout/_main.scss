@@ -23,6 +23,9 @@ a.button {
   text-decoration: none;
 }
 
-section.search {
+section.container-filter {
   margin-top: 182px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

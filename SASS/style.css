@@ -9,10 +9,12 @@
   color: #333;
 }
 
-header {
-  background-color: #fff;
-  text-align: center;
-  height: 113px;
+@media (max-width: 768px) {
+  header {
+    background-color: #fff;
+    text-align: center;
+    height: 113px;
+  }
 }
 
 nav {
@@ -24,9 +26,11 @@ img.navbar_logo {
   margin-top: 20px;
 }
 
-.search-container {
-  position: relative;
-  width: 100%;
+@media (max-width: 768px) {
+  .search-container {
+    position: relative;
+    width: 100%;
+  }
 }
 
 .search-input {
@@ -101,8 +105,11 @@ a.button {
   text-decoration: none;
 }
 
-section.search {
+section.container-filter {
   margin-top: 182px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .header {
