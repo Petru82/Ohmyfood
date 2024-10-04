@@ -55,8 +55,37 @@ header .search-container input[type=search]::placeholder {
   padding-left: 60px;
 }
 
-.footer {
+footer {
   background-color: #353535;
+  height: 186px;
+}
+footer h2 {
+  color: white;
+  font-family: "Shrikhand", serif;
+  padding: 30px 30px 20px 30px;
+}
+footer .footer-nav ul {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  margin-left: 30px;
+  gap: 7px;
+}
+footer .footer-nav li {
+  display: flex;
+  height: 19px;
+}
+footer .footer-nav i {
+  display: flex;
+  margin-right: 20px;
+  width: 11px;
+  height: 13px;
+}
+footer .footer-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .button {
@@ -156,6 +185,7 @@ section.title_button {
   align-items: center;
   justify-content: center;
   gap: 18px;
+  margin-bottom: 49px;
 }
 .container-restaurants .restaurants-card .card-container {
   padding: 17px;

@@ -1,3 +1,39 @@
-.footer {
+footer {
   background-color: #353535;
+  height: 186px;
+
+  h2 {
+    color: white;
+    font-family: $font-primary;
+    padding: 30px 30px 20px 30px;
+  }
+
+  .footer-nav {
+    ul {
+      display: flex;
+      flex-direction: column;
+      color: white;
+      font-family: $font-secondary;
+      margin-left: 30px;
+      gap: 7px;
+    }
+
+    li {
+      display: flex;
+      height: 19px;
+    }
+
+    i {
+      display: flex;
+      margin-right: 20px;
+      width: 11px;
+      height: 13px;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }
 }
