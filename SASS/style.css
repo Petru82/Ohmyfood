@@ -2,6 +2,16 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-family: "Shrikhand", serif;
 }
 
 .logo {
@@ -94,8 +104,10 @@ footer .footer-nav a {
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
   border: none;
   color: #ffffff;
-  width: 218px;
-  height: 50px;
+  padding: 13px 16px;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
 }
 
 section.title {
@@ -173,7 +185,6 @@ section.title_button {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 17px;
 }
 .container-restaurants .restaurants-title {
   font-family: "Roboto", sans-serif;
