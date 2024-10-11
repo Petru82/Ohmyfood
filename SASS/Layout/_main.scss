@@ -21,7 +21,7 @@ section.title {
   }
 
   &_button {
-    color: #fff;
+    color: $white-color;
     text-decoration: none;
   }
 }
@@ -70,7 +70,7 @@ section.title {
       display: flex;
       align-items: center;
       justify-content: center;
-      color: white;
+      color: $white-color;
       z-index: 1;
     }
   }
