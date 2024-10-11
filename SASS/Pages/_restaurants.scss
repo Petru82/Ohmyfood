@@ -1,3 +1,13 @@
+.navbar {
+  padding: 15px;
+}
+
+.image {
+  height: 275px;
+  width: 100%;
+  object-fit: cover;
+}
+
 .menu {
   display: flex;
   flex-direction: column;
@@ -5,12 +15,13 @@
   border-radius: 40px 40px 0 0;
   padding: 13px;
   gap: 40px;
+  transform: translateY(-32px);
 
   .title {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 31px 20px 50px 0;
+    padding: 31px 20px 0 0;
     height: 29px;
 
     .heart {
@@ -48,8 +59,12 @@
     gap: 12px;
 
     h2 {
+      display: flex;
       font-weight: normal;
       font-size: 16px;
+      border-bottom: 3px solid $tertiary-color;
+      width: 40px;
+      padding-bottom: 5px;
     }
 
     .filter {
@@ -71,5 +86,14 @@
     display: flex;
     justify-content: center;
     height: 50px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+
+    a.button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 186px;
+    }
   }
 }

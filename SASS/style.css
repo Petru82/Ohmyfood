@@ -22,7 +22,6 @@ h1 {
 header {
   background-color: #fff;
   text-align: center;
-  height: 113px;
 }
 header nav {
   height: 63px;
@@ -276,6 +275,17 @@ section.title_button {
   transition: fill 0.3s, stroke 0.3s;
 }
 
+.navbar {
+  padding: 15px;
+}
+
+.image {
+  height: 275px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .menu {
   display: flex;
   flex-direction: column;
@@ -283,12 +293,13 @@ section.title_button {
   border-radius: 40px 40px 0 0;
   padding: 13px;
   gap: 40px;
+  transform: translateY(-32px);
 }
 .menu .title {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 31px 20px 50px 0;
+  padding: 31px 20px 0 0;
   height: 29px;
 }
 .menu .title .heart-container {
@@ -319,8 +330,12 @@ section.title_button {
   gap: 12px;
 }
 .menu .container h2 {
+  display: flex;
   font-weight: normal;
   font-size: 16px;
+  border-bottom: 3px solid #99e2d0;
+  width: 40px;
+  padding-bottom: 5px;
 }
 .menu .container .filter {
   display: flex;
@@ -339,6 +354,14 @@ section.title_button {
   display: flex;
   justify-content: center;
   height: 50px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+.menu .btn a.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 186px;
 }
 
 .header {
