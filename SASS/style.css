@@ -276,7 +276,16 @@ section.title_button {
 }
 
 .navbar {
+  display: flex;
+  align-items: center;
   padding: 15px;
+  position: relative;
+  width: 100%;
+}
+.navbar img.navbar_logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .image {
