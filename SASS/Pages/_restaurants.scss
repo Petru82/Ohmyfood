@@ -75,15 +75,95 @@
     .filter {
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
       background-color: $white-color;
       box-shadow: 0px 4.01px 15.04px 0px #0000001a;
       gap: 5px;
       border-radius: 15px;
       padding: 15px;
+      animation: fade-in 0.25s ease-in forwards;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      h3 {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .checkmark {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        width: 60px;
+        height: 100%;
+        background-color: $tertiary-color;
+        right: 0;
+        opacity: 0;
+        border-radius: 0 15px 15px 0;
+        transition: all 0.5s;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        transform: translateX(100%);
+      }
 
       .details {
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
+      }
+
+      .price {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+      }
+
+      &:hover .checkmark {
+        transform: translateX(0);
+        cursor: pointer;
+        opacity: 1;
+      }
+
+      &:hover .price {
+        transform: translateX(-60px);
+      }
+
+      .fa-check:before {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $white-color;
+        color: $tertiary-color;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+      }
+
+      @keyframes fade-in {
+        0% {
+          opacity: 0;
+          transform: translateY(50px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      &.delay-1 {
+        animation-delay: 0.2s;
+      }
+
+      &.delay-2 {
+        animation-delay: 0.4s;
+      }
+
+      &.delay-3 {
+        animation-delay: 0.6s;
       }
     }
   }
@@ -107,6 +187,7 @@
     border-bottom: 3px solid $tertiary-color;
     bottom: -10px;
     left: 0;
+    margin-bottom: 5px;
     width: 50%;
     height: 10px;
     transform: scaleX(1);
