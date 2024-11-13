@@ -11,13 +11,22 @@ section.title {
     margin-top: 39px;
     width: 275px;
     height: 68px;
+
+    @media screen and (min-width: 768px) {
+      width: auto;
+      font-size: 40px;
+    }
   }
 
   p {
-    font-family: $font-secondary;
     width: 315px;
     margin-top: 10px;
     margin-bottom: 27px;
+
+    @media screen and (min-width: 768px) {
+      width: auto;
+      font-size: 18px;
+    }
   }
 
   &_button {
@@ -29,11 +38,28 @@ section.title {
 .container-filter {
   display: flex;
   flex-direction: column;
-  height: 440px;
+  height: auto;
   margin-top: 48px;
-  font-family: $font-secondary;
-  margin-left: 20px;
-  margin-right: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 30px;
+
+  .filter-title {
+    width: 100%;
+  }
+
+  .filter-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
 
   .filter-group {
     position: relative;
@@ -49,6 +75,11 @@ section.title {
       border-radius: 20px;
       gap: 23px;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+      @media screen and (min-width: 768px) {
+        width: 335px;
+        height: 72px;
+      }
 
       i.fas {
         color: #7e7e7e;
@@ -141,6 +172,11 @@ section.title {
     justify-content: center;
     gap: 18px;
     margin-bottom: 49px;
+
+    @media screen and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
 
     .card-container {
       padding: 17px;

@@ -8,6 +8,14 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-container {
+  max-width: 1440px;
+  width: 100%;
 }
 
 h1 {
@@ -67,28 +75,50 @@ header .search-container input[type=search]::placeholder {
 footer {
   background-color: #353535;
   height: 186px;
+  padding: 22px 25px 22px 25px;
 }
 footer h2 {
   color: white;
   font-family: "Shrikhand", serif;
-  padding: 30px 30px 20px 30px;
+}
+@media screen and (min-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 114px;
+    align-items: center;
+    padding: 30px 25px 30px 25px;
+    gap: 16px;
+  }
 }
 footer .footer-nav ul {
   display: flex;
   flex-direction: column;
   color: white;
   font-family: "Roboto", sans-serif;
-  margin-left: 30px;
   gap: 7px;
+}
+@media screen and (min-width: 768px) {
+  footer .footer-nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
 }
 footer .footer-nav li {
   display: flex;
   height: 19px;
 }
+footer .footer-nav .wide {
+  width: 190px;
+}
+footer .footer-nav .narrow {
+  width: 130px;
+}
 footer .footer-nav i {
   display: flex;
-  margin-right: 20px;
-  width: 11px;
+  margin-right: 10px;
+  width: 12px;
   height: 13px;
 }
 footer .footer-nav a {
@@ -134,11 +164,22 @@ section.title h1 {
   width: 275px;
   height: 68px;
 }
+@media screen and (min-width: 768px) {
+  section.title h1 {
+    width: auto;
+    font-size: 40px;
+  }
+}
 section.title p {
-  font-family: "Roboto", sans-serif;
   width: 315px;
   margin-top: 10px;
   margin-bottom: 27px;
+}
+@media screen and (min-width: 768px) {
+  section.title p {
+    width: auto;
+    font-size: 18px;
+  }
 }
 section.title_button {
   color: #ffffff;
@@ -148,11 +189,27 @@ section.title_button {
 .container-filter {
   display: flex;
   flex-direction: column;
-  height: 440px;
+  height: auto;
   margin-top: 48px;
-  font-family: "Roboto", sans-serif;
-  margin-left: 20px;
-  margin-right: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 30px;
+}
+.container-filter .filter-title {
+  width: 100%;
+}
+.container-filter .filter-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .container-filter .filter-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 .container-filter .filter-group {
   position: relative;
@@ -168,6 +225,12 @@ section.title_button {
   border-radius: 20px;
   gap: 23px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+@media screen and (min-width: 768px) {
+  .container-filter .filter-group .filter {
+    width: 335px;
+    height: 72px;
+  }
 }
 .container-filter .filter-group .filter i.fas {
   color: #7e7e7e;
@@ -249,6 +312,12 @@ section.title_button {
   justify-content: center;
   gap: 18px;
   margin-bottom: 49px;
+}
+@media screen and (min-width: 768px) {
+  .container-restaurants .restaurants-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 .container-restaurants .restaurants-card .card-container {
   padding: 17px;
@@ -404,9 +473,6 @@ section.title_button {
   border-radius: 15px;
   padding: 15px;
   animation: fade-in 0.25s ease-in forwards;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .menu .container .filter h3 {
   white-space: nowrap;
