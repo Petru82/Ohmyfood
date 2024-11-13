@@ -13,9 +13,13 @@ body {
   justify-content: center;
 }
 
-.main-container {
+main {
   max-width: 1440px;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1 {
@@ -157,6 +161,7 @@ section.title {
   text-align: center;
   background-color: #f6f6f6;
   padding-bottom: 57px;
+  width: 100%;
 }
 section.title h1 {
   font-family: "Roboto", sans-serif;
@@ -424,7 +429,17 @@ section.title_button {
   border-radius: 40px 40px 0 0;
   padding: 13px;
   gap: 40px;
-  transform: translateY(-32px);
+  margin-top: -32px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    width: 1055px;
+    align-items: center;
+  }
+  .menu h1 {
+    margin-right: 40px;
+  }
 }
 .menu .title {
   display: flex;
@@ -474,6 +489,11 @@ section.title_button {
   padding: 15px;
   animation: fade-in 0.25s ease-in forwards;
 }
+@media screen and (min-width: 768px) {
+  .menu .container .filter {
+    width: 634px;
+  }
+}
 .menu .container .filter h3 {
   white-space: nowrap;
   overflow: hidden;
@@ -499,6 +519,11 @@ section.title_button {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+.menu .container .filter .details p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu .container .filter .price {
   display: flex;

@@ -13,9 +13,13 @@ body {
   justify-content: center;
 }
 
-.main-container {
+main {
   max-width: 1440px;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1 {

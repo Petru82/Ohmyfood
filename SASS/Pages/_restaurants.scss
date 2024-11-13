@@ -25,7 +25,17 @@
   border-radius: 40px 40px 0 0;
   padding: 13px;
   gap: 40px;
-  transform: translateY(-32px);
+  margin-top: -32px;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: 1055px;
+    align-items: center;
+
+    h1 {
+      margin-right: 40px;
+    }
+  }
 
   .title {
     display: flex;
@@ -83,6 +93,10 @@
       padding: 15px;
       animation: fade-in 0.25s ease-in forwards;
 
+      @media screen and (min-width: 768px) {
+        width: 634px;
+      }
+
       h3 {
         white-space: nowrap;
         overflow: hidden;
@@ -110,6 +124,12 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+
+        p {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
       }
 
       .price {
