@@ -97,10 +97,11 @@
         width: 634px;
       }
 
-      h3 {
+      &:hover h3 {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        max-width: 35%;
       }
 
       .checkmark {
@@ -125,10 +126,11 @@
         flex-direction: row;
         justify-content: space-between;
 
-        p {
+        &:hover p {
           white-space: nowrap;
           overflow: hidden;
           text-overflow: ellipsis;
+          max-width: 35%;
         }
       }
 

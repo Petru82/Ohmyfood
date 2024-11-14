@@ -11,6 +11,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+.main_container {
+  max-width: 1440px;
+  width: 100%;
 }
 
 main {
@@ -494,10 +500,11 @@ section.title_button {
     width: 634px;
   }
 }
-.menu .container .filter h3 {
+.menu .container .filter:hover h3 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  max-width: 35%;
 }
 .menu .container .filter .checkmark {
   display: flex;
@@ -520,10 +527,11 @@ section.title_button {
   flex-direction: row;
   justify-content: space-between;
 }
-.menu .container .filter .details p {
+.menu .container .filter .details:hover p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  max-width: 35%;
 }
 .menu .container .filter .price {
   display: flex;
