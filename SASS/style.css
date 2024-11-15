@@ -20,10 +20,7 @@ body {
 }
 
 main {
-  max-width: 1440px;
-  width: 100%;
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
 }
@@ -207,6 +204,11 @@ section.title_button {
   width: 100%;
   padding: 30px;
 }
+@media screen and (min-width: 768px) {
+  .container-filter {
+    max-width: 1053px;
+  }
+}
 .container-filter .filter-title {
   width: 100%;
 }
@@ -239,7 +241,7 @@ section.title_button {
 }
 @media screen and (min-width: 768px) {
   .container-filter .filter-group .filter {
-    width: 335px;
+    width: 323px;
     height: 72px;
   }
 }
@@ -316,6 +318,14 @@ section.title_button {
   font-family: "Roboto", sans-serif;
   margin: 37px 0 14px 3px;
 }
+@media screen and (min-width: 768px) {
+  .container-restaurants .restaurants-title {
+    width: 1080px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
 .container-restaurants .restaurants-card {
   display: flex;
   flex-direction: column;
@@ -326,8 +336,15 @@ section.title_button {
 }
 @media screen and (min-width: 768px) {
   .container-restaurants .restaurants-card {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px 100px;
+    width: 1080px;
+    margin: auto;
+    margin-bottom: 50px;
   }
 }
 .container-restaurants .restaurants-card .card-container {
@@ -335,6 +352,12 @@ section.title_button {
   width: 100%;
   height: 251px;
   position: relative;
+}
+@media screen and (min-width: 768px) {
+  .container-restaurants .restaurants-card .card-container {
+    padding: 0;
+    width: 490px;
+  }
 }
 .container-restaurants .restaurants-card .card-container .new-label {
   position: absolute;
@@ -368,6 +391,7 @@ section.title_button {
   border-radius: 0 0 15px 15px;
   padding-left: 13px;
   position: relative;
+  margin-top: -3px;
 }
 .card-content h3 {
   font-family: "Roboto", sans-serif;
@@ -390,8 +414,8 @@ section.title_button {
   display: none;
 }
 .card-content .heart-checkbox:checked + .heart-shape svg {
-  fill: url(#heart-gradient);
-  stroke: url(#heart-gradient);
+  fill: url(#heart-gradient-1);
+  stroke: url(#heart-gradient-1);
 }
 .card-content .heart-shape {
   cursor: pointer;
